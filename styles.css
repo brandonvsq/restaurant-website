@@ -5,12 +5,19 @@
 body {
     margin: 0px;
     background-color: antiquewhite;
+    height: 100vh;
+}
+
+header {
+    height: 130px;
+    border-bottom: 5px solid black;
 }
 
 h1 {
     font-family: "Playfair Display", cursive;
     font-size: 45px;
     text-shadow: 3px 3px 3px rgb(182, 181, 181);
+    margin: 0px 0px 10px 0px;
 }
 
 .button {
@@ -24,6 +31,18 @@ h1 {
     text-decoration: none;
     text-align: center;
     box-shadow: 5px 5px 10px rgb(40, 39, 39);
+}
+
+.button:hover {
+    background-color: #f55a5a;
+    width: 90px;
+}
+
+#container {
+    display: flow-root;
+    border: 5px solid red;
+    margin: 0px;
+    padding: 0px;
 }
 
 #img1 {
@@ -40,4 +59,9 @@ p {
     font-family: Mukta, sans-serif;
     font-weight: 300;
     margin: 0px;
+}
+
+footer {
+    height: 130px;
+    border-top: 5px solid black;
 }
