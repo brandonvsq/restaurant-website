@@ -10,7 +10,7 @@ body {
 
 header {
     height: 130px;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid;
 }
 
 h1 {
@@ -40,9 +40,10 @@ h1 {
 
 #container {
     display: flow-root;
-    border: 5px solid red;
     margin: 0px;
-    padding: 0px;
+    padding: 15px 0px 0px 0px;
+    height: 500px;
+    overflow: scroll;
 }
 
 #img1 {
@@ -62,6 +63,6 @@ p {
 }
 
 footer {
-    height: 130px;
+    height: 65px;
     border-top: 5px solid black;
 }
