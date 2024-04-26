@@ -1,68 +1,49 @@
+/* General */
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    background-color: antiquewhite;
+    background-color: hsl(34, 68%, 94%);
     height: 100vh;
+    margin: 0px;
 }
 
-header {
-    height: 130px;
-    border-bottom: 5px solid;
-}
-
+/* Heading */
 h1 {
-    font-family: "Playfair Display", cursive;
-    font-size: 45px;
-    text-shadow: 3px 3px 3px rgb(182, 181, 181);
-    margin: 0px 0px 10px 0px;
-}
-
-.button {
-    display: inline-block;
-    background-color: hsl(228, 5%, 79%);
-    color: black;
-    width: 80px;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-decoration: none;
     text-align: center;
-    box-shadow: 5px 5px 10px rgb(40, 39, 39);
+    text-shadow: 3px 3px 3px rgb(182, 181, 181);
+    font-family: "Playfair Display", cursive;
+    font-size: 80px;
+    margin: 20px;
 }
 
-.button:hover {
-    background-color: #f55a5a;
-    width: 90px;
-}
-
-#container {
-    display: flow-root;
+.nav-bar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
     margin: 0px;
-    padding: 15px 0px 0px 0px;
-    height: 500px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
-#img1 {
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-bar a:hover {
+    background-color: hsl(0, 0%, 15%);
+}
+
+.nav-bar li {
     float: left;
-    margin-right: 10px;
+    width: 25%;
 }
 
-#img2 {
-    float: right;
-    margin-left: 10px;
-}
+/* Body */
 
-p {
-    font-family: Mukta, sans-serif;
-    font-weight: 300;
-    margin: 0px;
-}
-
-footer {
-    height: 65px;
-    border-top: 5px solid black;
-}
+/* Footer */
