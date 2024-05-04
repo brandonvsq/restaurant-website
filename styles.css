@@ -4,90 +4,61 @@
 }
 
 body {
-    background-color: hsl(35, 66%, 84%);
-    margin: 0px;
-}
-
-/* Heading */
-header {
-    background-color: hsla(0, 61%, 42%, 0.899);
-    margin: 0px;
-}
-
-h1 {
-    text-align: center;
-    text-shadow: 3px 3px 3px hsl(0, 94%, 7%);
-    font-family: "Playfair Display", cursive;
-    font-size: 4em;
-    padding: 15px;
+    background-color: hsl(0, 0%, 100%);
     margin: 0px;
 }
 
 /* Navigation */
-nav {
-    background-color: hsl(35, 93%, 38%);
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+.nav-bar {
+    background-color: hsla(0, 61%, 42%, 0.899);
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 
-nav ul {
+.nav-bar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-}
-
-nav li {
-    margin-right: 10px;
-    width: 100%;
-    text-align: center;
-    border-left: 2px solid;
+    justify-content: flex-end;
+    align-items: center;
+    height:65px;
     margin: 0px;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    display: block;
+.nav-bar li {
+    margin-right: 20px;
+    font-size: 24px;
+    width: 100px;
+    text-align: center;
+    position: relative;
 }
 
-nav a:hover {
-    background-color: hsl(35, 93%, 48%);
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.nav-bar a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-bar a:hover::before {
+    transform: scaleX(1);
+}
+
+#title {
+    margin-right: auto;
+    font-size: 45px;
+    width: 250px;
 }
 
 /* Main */
-main {
-    display: flex;
-    height: 73vh;
-}
-
-section {
-    flex: 2;
-    text-align: center;
-}
-
-aside {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-aside img {
-    width: 350px;
-    height: 350px;
-    margin-top: 20px;
-}
-
-/* Footer */
-
-footer {
-    background-color: white;
-    font-size: 24px;
-}
-
-footer p {
-    margin: 0px;
-}
-
