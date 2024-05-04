@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height:65px;
+    height: 65px;
     margin: 0px 10px 0px 0px;
     padding: 0px;
 }
@@ -73,14 +73,37 @@ body {
 }
 
 #title a:hover {
-    color: hsl(0, 0%, 80%);
+    color: white;
 }
 
 /* Main */
+main {
+    height: auto;
+}
+
+.hero {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    height: 80vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
 
 /* Footer */
 footer {
     border: 2px solid;
+    height: 65px;
+    background-color: hsla(0, 0%, 29%, 0.899);
 }
 
 /* Media Query for Mobile Devices */
@@ -95,13 +118,14 @@ footer {
     .nav-bar li {
         width: 100%;
         text-align: left;
+        margin-left: 15px;
         margin-bottom: 10px;
         font-size: 21px;
     }
 
     #title {
         font-size: 40px;
-        margin-left: 0;
+        margin-left: 5px;
         margin-bottom: 10px;
     }
 
