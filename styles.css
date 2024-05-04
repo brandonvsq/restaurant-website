@@ -21,24 +21,24 @@ body {
     justify-content: flex-end;
     align-items: center;
     height:65px;
-    margin: 0px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
 }
 
 .nav-bar li {
-    margin-right: 20px;
     font-size: 24px;
     width: 100px;
     text-align: center;
     position: relative;
 }
 
-.nav-bar a {
+.nav-bar .nav-items a {
     text-decoration: none;
     color: black;
     position: relative;
 }
 
-.nav-bar a::before {
+.nav-bar .nav-items a::before {
     content: "";
     position: absolute;
     display: block;
@@ -51,14 +51,29 @@ body {
     transition: transform 0.3s ease;
 }
 
-.nav-bar a:hover::before {
+.nav-bar .nav-items a:hover::before {
     transform: scaleX(1);
 }
 
+.locations {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
 #title {
-    margin-right: auto;
     font-size: 45px;
     width: 250px;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+#title a {
+    text-decoration: none;
+    color: black;
+}
+
+#title a:hover {
+    color: hsl(0, 0%, 80%);
 }
 
 /* Main */
