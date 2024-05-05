@@ -76,12 +76,8 @@ body {
     color: white;
 }
 
-/* Main */
-main {
-    height: auto;
-}
-
-.hero {
+/* Index */
+.hero-main {
     background-color: #ffffff;
     color: black;
     text-align: center;
@@ -89,21 +85,79 @@ main {
     height: 80vh;
 }
 
-.hero-content h1 {
+.hero-main h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.hero-content p {
+.hero-main p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
+/* About */
+.about-us {
+    display: flex;
+    border: 2px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.our-story {
+    display: flex;
+    border: 2px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.our-cuisine {
+    display: flex;
+    border: 2px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.our-commitment {
+    display: flex;
+    border: 2px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-image {
+    border: 2px solid blue;
+    flex: 1;
+    text-align: center;
+}
+
+.section-image img {
+    width: 400px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+.section-content {
+    border: 2px solid red;
+    flex: 1;
+    text-align: center;
+}
+
+/* Menu */
+
+
+/* Locations */
+
+
+/* Contact */
+
+
 /* Footer */
 footer {
-    border: 2px solid;
+    background-color: hsla(0, 64%, 22%, 0.899);
     height: 65px;
-    background-color: hsla(0, 0%, 29%, 0.899);
+    text-align: center;
+    color: rgb(31, 31, 31);
+    border-top: 4px solid;
+    border-bottom: 4px solid;
 }
 
 /* Media Query for Mobile Devices */
