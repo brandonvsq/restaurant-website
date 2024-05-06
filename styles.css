@@ -120,7 +120,7 @@ body {
 }
 
 .about-us {
-    background-color: rgb(0, 0, 0);
+    background-color: #121212;
     border: 2px solid white;
     color: white;
     margin-top: 50px;
@@ -133,7 +133,7 @@ body {
 }
 
 .our-story {
-    background-color: rgb(0, 0, 0);
+    background-color: #121212;
     border: 2px solid white;
     color: white;
     margin-top: 25px;
@@ -145,7 +145,7 @@ body {
 }
 
 .our-cuisine {
-    background-color: rgb(0, 0, 0);
+    background-color: #121212;
     border: 2px solid white;
     color: white;
     margin-top: 25px;
@@ -157,7 +157,7 @@ body {
 }
 
 .our-commitment {
-    background-color: rgb(0, 0, 0);
+    background-color: #121212;
     border: 2px solid white;
     color: white;
     margin-top: 25px;
@@ -219,11 +219,11 @@ body {
 }
 
 .menu-main h1 {
-    font-family: "IM Fell English", Serif;
+    font-family: "Alegreya", Serif;
     text-align: center;
     margin: 0px;
     padding-top: 50px;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 #menu {
@@ -233,7 +233,7 @@ body {
 }
 
 .menu-one {
-    background-color: black;
+    background-color: #121212;
     border: 2px solid white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     padding: 0px;
@@ -244,7 +244,7 @@ body {
 }
 
 .menu-two {
-    background-color: black;
+    background-color: #121212;
     border: 2px solid white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     padding: 0px;
@@ -309,10 +309,58 @@ body {
 
 /* Contact */
 .contact-main {
-    background-image: url("");
+    background-image: url("images/table.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-main h1 {
+    margin-bottom: 0px;
+    font-family: "Alegreya", Serif;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: #121212;
+    border: 1px solid black;
+    padding: 20px;
+    width: 600px;
+    margin: 20px 20px 50px 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    color: white;
+    font-family: "Alegreya", Serif;
+}
+
+input[type=text],input[type=email], input[type=tel], textarea  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px 30px 0px;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #282D33;
+    color: #fff;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0056b3;
 }
 
 /* Footer */
@@ -320,7 +368,7 @@ footer {
     background-color: black;
     color: white;
     font-family: "IM Fell English", Serif;
-    border-top: 2px solid white;
+    border-top: 1px solid white;
 }
 
 .footer-content {
@@ -328,18 +376,31 @@ footer {
     padding: 10px;
 }
 
-.contact-info {
-    margin-top: 10px;
+.hours-of-operation , .contact-info  {
+    margin-top: 20px;
 }
 
-.contact-info p {
+.hours-of-operation p , .contact-info p  {
     margin: 5px 0;
+}
+
+.footer-title {
     text-decoration: underline;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info a:hover {
+    color: gray;
 }
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
 
+    /* Navigation Bar */
     .nav-bar ul {
         flex-direction: column;
         align-items: flex-start;
@@ -360,33 +421,46 @@ footer {
         margin-bottom: 10px;
     }
 
+    /* Index */
     .hero-main h1 {
-        width: 80%; /* Adjusted for mobile */
+        width: 90%;
     }
 
     .hero-main p {
-        width: 80%; /* Adjusted for mobile */
+        width: 70%;
     }
 
+    /* About */
     .section-image img {
-        width: 80%; /* Adjusted for mobile */
-    }
-
-    .section-content {
-        width: 100%; /* Adjusted for mobile */
-    }
-
-    #about-image img {
         width: 80%;
     }
 
+    .section-content {
+        width: 100%;
+    }
+
+    #about-content {
+        width: 100%;
+    }
+
+    #about-image img {
+        height: 300px;
+        width: 100%;
+    }
+
+    /* Menu */
     .menu-one,
     .menu-two {
-        width: 100%; /* Adjusted for mobile */
+        width: 85%;
     }
 
     .food-image img,
     .drinks-image img {
-        width: 100%; /* Adjusted for mobile */
+        width: 85%;
+    }
+
+    /* Contact */
+    .form-container {
+        width: 80%;
     }
 }
