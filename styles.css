@@ -203,20 +203,92 @@ body {
 }
 
 #about-image img {
-    width: 600px;
+    width: 850px;
+    height: 400px;
     margin: 30px 0px 0px 0px;
     padding: 0px;
 }
 
 /* Menu */
 .menu-main {
-    background-image: url("");
+    background-image: url("images/bar-dark.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
 }
 
+.menu-main h1 {
+    text-align: center;
+    margin: 0px;
+    padding-top: 50px;
+    font-family: "IM Fell English", Serif;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-one {
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    display: flex;
+}
+
+.menu-two {
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 80%;
+    display: flex;
+}
+
+.food {
+    flex: 1;
+}
+
+.food-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.food-image img{
+    width: 500px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.435);
+}
+
+.drinks {
+    flex: 1;
+}
+
+.drinks-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.drinks-image img{
+    width: 500px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.435);
+}
+
+.menu-category {
+    border: 2px solid green;
+}
 
 /* Contact */
 .contact-main {
