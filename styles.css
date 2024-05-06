@@ -219,10 +219,10 @@ body {
 }
 
 .menu-main h1 {
+    font-family: "IM Fell English", Serif;
     text-align: center;
     margin: 0px;
     padding-top: 50px;
-    font-family: "IM Fell English", Serif;
     font-size: 40px;
 }
 
@@ -236,7 +236,7 @@ body {
     background-color: black;
     border: 2px solid white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    padding: 0px;
     margin-top: 50px;
     margin-bottom: 50px;
     width: 75%;
@@ -247,7 +247,7 @@ body {
     background-color: black;
     border: 2px solid white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 50px;
     width: 75%;
     display: flex;
@@ -267,8 +267,8 @@ body {
 
 .food-image img{
     width: 500px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.435);
     margin-right: 50px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.435);
 }
 
 .drinks {
@@ -285,8 +285,8 @@ body {
 
 .drinks-image img{
     width: 500px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.435);
     margin-right: 50px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.435);
 }
 
 .menu-category {
@@ -300,6 +300,10 @@ body {
     font-family: "IM Fell English", Serif;
     text-decoration: underline;
     margin-bottom: 0px;
+}
+
+.menu-category ul li {
+    font-family: "Alegreya", Serif;
 }
 
 
@@ -356,7 +360,33 @@ footer {
         margin-bottom: 10px;
     }
 
-    .locations {
-        margin: 0px;
+    .hero-main h1 {
+        width: 80%; /* Adjusted for mobile */
+    }
+
+    .hero-main p {
+        width: 80%; /* Adjusted for mobile */
+    }
+
+    .section-image img {
+        width: 80%; /* Adjusted for mobile */
+    }
+
+    .section-content {
+        width: 100%; /* Adjusted for mobile */
+    }
+
+    #about-image img {
+        width: 80%;
+    }
+
+    .menu-one,
+    .menu-two {
+        width: 100%; /* Adjusted for mobile */
+    }
+
+    .food-image img,
+    .drinks-image img {
+        width: 100%; /* Adjusted for mobile */
     }
 }
